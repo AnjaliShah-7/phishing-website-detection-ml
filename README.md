@@ -15,7 +15,7 @@ This project aims to build a machine learning model that can accurately classify
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Data Ingestion Pipeline
 - Data Validation
@@ -23,13 +23,11 @@ This project aims to build a machine learning model that can accurately classify
 - Model Training
 - Hyperparameter Tuning
 - Prediction Pipeline
-- Flask Web Application *(In Progress)*
-- Docker Support *(Planned)*
-- AWS Deployment *(Planned)*
+- Flask Web Application 
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 phishing-website-detection/
@@ -59,7 +57,7 @@ phishing-website-detection/
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - Python
 - Scikit-learn
@@ -70,7 +68,7 @@ phishing-website-detection/
 
 ---
 
-## 📊 Machine Learning Workflow
+##  Machine Learning Workflow
 
 1. Data Ingestion
 2. Data Validation
@@ -82,7 +80,7 @@ phishing-website-detection/
 
 ---
 
-## 📁 Dataset
+##  Dataset
 
 The dataset contains website-related features used to classify websites as:
 
@@ -91,7 +89,7 @@ The dataset contains website-related features used to classify websites as:
 
 ---
 
-## 🎯 Future Improvements
+##  Future Improvements
 
 - MLflow Integration
 - Docker Containerization
@@ -102,7 +100,7 @@ The dataset contains website-related features used to classify websites as:
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Anjali Shah**
 
