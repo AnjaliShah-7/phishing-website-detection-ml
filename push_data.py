@@ -27,7 +27,9 @@ class PhishingDataExtract():
     def csv_to_json_convertor(self,file_path):
         try:
             data=pd.read_csv(file_path)
-            data.reset_index(drop=True,inplace=True)
+            data.drop(columns=["Index"], inplace=True)
+            data.reset_index(drop=True, inplace=True)
+            
             records=list(json.loads(data.T.to_json()).values())
             return records
         except Exception as e:
@@ -39,7 +41,7 @@ class PhishingDataExtract():
             self.collection=collection
             self.records=records
 
-            self.mongo_client=pymongo.MongoClient(MONGO_DB_URL)
+            self.mongo_client=pymongo.MongoClient(MONGO_DB_URL,tlsCAFile=ca)
             self.database = self.mongo_client[self.database]
             
             self.collection=self.database[self.collection]
